@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btnOrder = findViewById(R.id.order);
+
+        Toast.makeText(this, "testing gittt", Toast.LENGTH_SHORT).show();
 
         btnOrder.setOnClickListener(new View.OnClickListener() {
             @Override
